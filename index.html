@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keybo | Zamanın Ardında</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #0b0c10;
+            color: #c5c6c7;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .album-cover {
+            max-width: 320px;
+            width: 100%;
+            height: auto;
+            margin: 30px auto;
+            border: 2px solid #45f3ff;
+            box-shadow: 0 0 25px rgba(69, 243, 255, 0.25);
+            border-radius: 8px;
+            display: block;
+        }
+        h1 {
+            color: #fff;
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+        .subtitle {
+            color: #45f3ff;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            font-style: italic;
+            letter-spacing: 1px;
+        }
+        .manifesto {
+            background-color: #1f2833;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #45f3ff;
+            text-align: left;
+            margin-bottom: 40px;
+            font-size: 1rem;
+            color: #e5e5e5;
+        }
+        .links-title {
+            font-size: 1.2rem;
+            color: #fff;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .btn {
+            display: block;
+            background-color: transparent;
+            color: #fff;
+            border: 2px solid #c5c6c7;
+            padding: 15px 20px;
+            margin: 12px 0;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            letter-spacing: 1px;
+        }
+        .btn:hover {
+            background-color: #45f3ff;
+            color: #0b0c10;
+            border-color: #45f3ff;
+            box-shadow: 0 0 15px rgba(69, 243, 255, 0.4);
+            transform: translateY(-2px);
+        }
+        .btn-spotify { border-color: #1DB954; color: #1DB954; }
+        .btn-spotify:hover { background-color: #1DB954; border-color: #1DB954; color: #fff; box-shadow: 0 0 15px rgba(29, 185, 84, 0.4); }
+        .btn-youtube { border-color: #FF0000; color: #FF0000; }
+        .btn-youtube:hover { background-color: #FF0000; border-color: #FF0000; color: #fff; box-shadow: 0 0 15px rgba(255, 0, 0, 0.4); }
+        .btn-apple { border-color: #fc3c44; color: #fc3c44; }
+        .btn-apple:hover { background-color: #fc3c44; border-color: #fc3c44; color: #fff; box-shadow: 0 0 15px rgba(252, 60, 68, 0.4); }
+        
+        .lyrics-section {
+            margin-top: 50px;
+            text-align: left;
+        }
+        .lyrics-section h2 {
+            color: #fff;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #1f2833;
+            padding-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        .song-card {
+            background-color: #15171c;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            border-top: 1px solid rgba(69, 243, 255, 0.05);
+        }
+        .song-title {
+            color: #45f3ff;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+        }
+        .song-lyrics {
+            white-space: pre-line;
+            font-size: 0.95rem;
+            color: #a5a6a7;
+            font-style: italic;
+        }
+        footer {
+            margin-top: 60px;
+            font-size: 0.8rem;
+            color: #4f5052;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Yerel kapak resmi -->
+        <img src="kapak.jpg" alt="Zamanın Ardında" class="album-cover">
+
+        <!-- Sanatçı ve Albüm İsmi -->
+        <h1>KEYBO</h1>
+        <div class="subtitle">[Zamanın Ardında] - Bağımsız Albüm Yayında</div>
+
+        <!-- Manifesto -->
+        <div class="manifesto">
+            Gecenin sessizliğinde, zamanın akıp giden çizgilerinin ardında kalanları fısıldayan bir ses. 
+            Melankolik altyapılarla harmanlanmış felsefi bir yüzleşme. 
+            Bu albüm; yolda geçen saatlerin, karanlıkta aranan cevapların ve zamana meydan okuyan kelimelerin bir araya gelişidir. 
+            "Zaman geçer, iz kalır. Her şey bir an içinde yıkılır." Kulak kabartın, çünkü her gölgenin anlatacak bir hikayesi vardır.
+        </div>
+
+        <!-- Dinleme Linkleri -->
+        <div class="links-title">Albümü Dinle</div>
+        <a href="https://open.spotify.com/intl-tr/album/3jVKnwsou9evya3lbqMCJP?si=daUdI0TVT0u2OQ5JJF-WSQ" target="_blank" class="btn btn-spotify">Spotify'da Dinle</a>
+        <a href="https://music.apple.com/tr/album/zaman%C4%B1n-ard%C4%B1nda/6775002636" target="_blank" class="btn btn-apple">Apple Music'te Dinle</a>
+        <a href="https://www.youtube.com/watch?v=hN0XBxvVZIk&list=OLAK5uy_nXlFKhPXt5dCE8vKEAEYvuEvYhxVJc9iY" target="_blank" class="btn btn-youtube">YouTube'da İzle</a>
+
+        <!-- Şarkı Sözleri -->
+        <div class="lyrics-section">
+            <h2>Albüm Şarkı Listesi & Sözler</h2>
+            
+            <div class="song-card">
+                <div class="song-title">1. Sisli Mazi</div>
+                <div class="song-lyrics">Hayat kimine gıcır, kimine bayat,
+Kimine bir tezgah, kimine koca bir tokat.
+Kimi sarayda sefada, kimi mapusta zindanda.
+Gözlerinde sisli mazi, ruhun hep bir isyanda.
+
+Vur ulan dünya, vur kaçıncı darbe!
+Kimi döner köşeyi, kimi düşer harbe.
+Bu öyle bir kahpe ki acımaz hiç kalbe,
+Diz çökmedik ama kalmadı sahne!
+
+Zaman denen bu zalim, öğütür durur adamı,
+Toprak sessizce bekler, unutur her sarayı.
+Cebinde bir avuç kül kalır, hani dünya fiyakan?
+Bir varmışla bir yokmuş arası, kesilir ferman...
+
+Vur ulan dünya, vur kaçıncı darbe!
+Kimi döner köşeyi, kimi düşer harbe.
+Bu öyle bir kahpe ki acımaz hiç kalbe,
+Diz çökmedik ama kalmadı sahne!</div>
+            </div>
+
+            <div class="song-card">
+                <div class="song-title">2. Doksan Dört</div>
+                <div class="song-lyrics">Sene doksan ettı, kökten değişti her şeyim
+İnancım, hayatım, düşlerim, serzenişlerim
+Başka hayatlarda saklıymış meğer benliğim
+Kendimi kaybetmedim, tam zamanında yetiştim
+
+Sus hadi dinle, bak zaman dediğin geçiyo
+Ruhumu bir girdap gibi gün gün içine çekiyo
+Oturdum dostlarımla, duble "Black" içiyom
+Bir birimize sararak, zaman güzel geçiyo
+
+Sanıyorsun ki sadece bu kuple yetiyor
+Diyorsun "Bu neymiş?", melankoli düşleri sarıyor
+Görmek, duymak ve susmak istediklerim
+Kendi alfabelerimle yazdım, bu içimdeki gizli yerim
+
+Zaman zaman kendimi çokça paraladım
+O büyük hiç uğruna, sessizce karaladım
+Şimdi hislerimi birer birer sıraladım
+Ben bu yolun başında, kendimi çok yaraladım
+
+Bir kuple daha, son kadehim bu akşam
+Maziden kalan tek şey, olgunlaşan bir ihtişam</div>
+            </div>
+
+            <div class="song-card">
+                <div class="song-title">3. Eşref Vakti</div>
+                <div class="song-lyrics">Göz kapaklarımda ağır bir perde
+Adım atsam boşluk, kalsam dertte
+Bir yanım geceyi gündüz sanır
+Bir yanım uyanır, ismini anır
+
+Gördüğüm mü gerçek yoksa bu bir rüya mı?
+Eşref vaktinde mi kurguladık dünyayı?
+Sırların içinde kaybolan o gölge
+Kalbinin kuytu, en yasaklı yerinde
+
+Aynalar sustu, sokaklar dilsiz
+Herkes bir hikaye peşinde ama hevessiz
+Zamanın durduğu ince çizgide
+Ruhum seni bekler bir düş izinde
+
+Gördüğüm mü gerçek yoksa bu bir rüya mı?
+Eşref vaktinde mi kurguladık dünyayı?
+Sırların içinde kaybolan o gölge
+Kalbinin kuytu, en yasaklı yerinde</div>
+            </div>
+
+            <div class="song-card">
+                <div class="song-title">4. Sinsi Kurgu</div>
+                <div class="song-lyrics">"Sana da günaydın...”
+
+Yetti artık bu sessizlik, yetti bu derin uyku
+Kalbine yuva yapmış o sinsi, sahte korku!
+Seni zincire vuran, sadece bir avuç tutku
+Aç gözünü gör artık, bu kurulan koca bir kurgu!
+
+Gördüğün o parıltılar, aslında birer serap
+Ruhunu sattığın o dünya, bak sonunda oldu harap!
+Hangi yalan temizler seni, her yanın olmuş bitap
+Uyan ey gençlik uyan, sana geldi bu hitap?
+
+Zaman akar gider, arkasına bile bakmaz
+Anlatılan her hikaye yarım kalır! 
+Sitemin sonu olmaz.
+
+Kır zincirleri artık dökülsün o gözyaşın, 
+Hakikate bürünsün her daim iç yoldaşın,
+Eğilmesin başın! Bitmesin bu savaşın,
+
+Kalk artık ayağa, bu seninde savaşın!
+Kırılsın o kilitler, son bulsun bu telaşın!
+Eğilmesin başın! Bitmesin bu savaşın!</div>
+            </div>
+
+            <div class="song-card">
+                <div class="song-title">5. Mürekkep Bitti</div>
+                <div class="song-lyrics">Masa kuruldu, kartlar aniden dağıtıldı
+Dostluk dediğin o ucuz tezgâhta satıldı!
+Gözler kör, eller kirli, herkes pusuda
+Zehir saklı o en tatlı sunulan suda...
+
+Bakma öyle masum, herkes birer oyuncu
+Bu masadan kalkamaz ne ilki ne sonuncu!
+Mürekkep bitti, şimdi kanla yazılır o yazı
+Sustur içindeki o bitmek bilmeyen vaazı!
+
+Zarlar atıldı... 
+Maskeler düştü...
+
+BU MASADA DOST YOK, SADECE HESAP VAR!
+Kimi kâr peşinde, kimi dünyayı yakar!
+Dostun da, düşmanın da hepsi kasada
+Kaybeden sen olursun, kalırsan bu masada!
+
+Kalem sende dedik, ama mürekkep zehir...
+Hangi gemi kurtulur, kuruduysa bu nehir?
+
+BU MASADA DOST YOK, SADECE HESAP VAR!
+Kimi kâr peşinde, kimi dünyayı yakar!
+Dostun da, düşmanın da hepsi kasada
+Kaybeden sen olursun, kalırsan bu masada!</div>
+            </div>
+
+            <div class="song-card">
+                <div class="song-title">6. Yer Üstü Edebiyatı</div>
+                <div class="song-lyrics">Göz önünde olup da görünmeyenler...
+Her gün aynı rayda gidip gelenler.
+Maskelerin ardında saklı o keder,
+Biz bugün susmayalım, dökelim birer birer!
+
+Güneşin altında herkes bir rol peşinde,
+Geçim derdi gizli, ekmeğin o sert dişinde.
+Meydanlar kalabalık ama ruhlar hep tekil,
+Yer üstü masal anlatır, sen gerçeğe eğil!
+Plazalarda sönen o hayallerin sesi,
+Yer altında atar şehrin her nefesi.
+
+Vitrinler parlıyor, içi bomboş bir hüzün,
+Gülümseme sahte, ardı kapkaranlık hüzün!
+
+Açalım perdeleri, gün ışığı vursun,
+Gizli saklı ne varsa, artık hesap sorsun!
+Yer üstü edebiyatı bu, sokağın tam kalbi,
+Gerçek çıplak kalsın, bırak gitsin harbi!
+
+Emeğin gizli kalmış o kutsal izleri,
+Betonun soğuğunda saklı child izleri.
+Demiri dövenlerin teri karışır toprağa,
+Dönmeyiz bir daha o eski karanlık çağa.
+Herkes her şeyi biliyor ama kimse konuşmaz,
+Yalanın üzerine kurulu bu düzen hiç mi… Sorgulanmaz!
+
+Duvarlar konuşsun, meydanlar bağırsın!
+Yer üstü uyansın, hak yerini bulsun!</div>
+            </div>
+
+            <div class="song-card">
+                <div class="song-title">7. Bu Film Bir Kez İzlenir</div>
+                <div class="song-lyrics">Cennet ya da cehennem... birer masal belki de
+Korku değil beni tutan, bu dünya sahnesinde
+"Neden kötü değilim?" diye sorma boşuna
+Vicdan denen o ses... fısıldar hep ruhuma
+İstediğim her şeyi yapabilirim aslında
+Ama ben iyiliği seçtim, bu yolun en başında
+
+Çünkü bu film bir kez izlenir, sonu bellidir!
+Hayat tekrarı olmadığı için kıymetlidir!
+Son çiçeği koklar gibi, son kez sarılır gibi
+Tutkuyla yaşa her anı, eşsiz bir rüya gibi
+
+Başka bir hayat yok, belki budur son eser!
+Başka bir hayat yok, belki sondur bu sefer!
+
+"Ölüm son ise ne anlamı var?" diyorsun
+Ama biten her şeyde bir hakikat görüyorsun
+Güneş batacak diye vazgeçer misin günden?
+Bir film bitecek diye çıkar mısın sahneden?
+Sonsuzluk değil bizi özel kılan bu hayatta
+Eksik bir parça gibiyiz... zaman denen durakta
+
+Çünkü bu film bir kez izlenir, sonu bellidir!
+Hayat tekrarı olmadığı için kıymetlidir! 
+Son çiçeği koklar gibi, son kez sarılır gibi
+Tutkuyla yaşa her anı, eşsiz bir rüya gibi
+
+Belki son olduğunu bilmeyeceksin o anın...
+Sımsıkı tut elini, o eşsiz zamanın...
+Korkma son durağa varmaktan,
+Korkmalı insan... yaşayamamaktan!</div>
+            </div>
+
+            <div class="song-card">
+                <div class="song-title">8. Sahte Dünya</div>
+                <div class="song-lyrics">Adımlarım ağır, her sokak duman ve pus
+Dilimde kilit var, ruhumda derin bir sus
+Yüzlerde bin maske, her yaraya TUZ…
+Yutma artık bu zehri, tüm sahteliği dünyaya kus!
+
+Tüketim bir zehir, damarlarında yavaşça gezer
+Alışveriş için insanlar birbirini ezer
+Zindanına ördüğün her tuğla, sondan daha beter
+Bu uyanış bir dönem, soğuuuk eser!
+
+Gözlerimin ardı kuyu, derinlerde bir uykusuzluk
+Hangi gerçeğe dokunsam, avucunda bir yolsuzluk
+Dünya bir sahne, bizlerse isimsiz figüranlar
+Gerçeği görenler mahkûm, bu düzene uyanlar memluk
+Sökün o maskeleri, kurusun o sahte suratlar
+Yıkılsın bu düzen, bitsin o bitmek bilmez hırslar.
+
+Bakışlarım gri bir sis, kelimelerim ise paslı demir
+Zihnimize kazınmış o görünmez, sessiz bin bir emir
+Kendi sesini duymak istersen eğer, bu koca bir nehir Özgürlük sandığın aslında, gizli bir şehir
+Adımlarımızı bağlar, her köşede bekleyen zehir
+
+Görmek istemeyen göze, ışıklar ne yapsın?
+Saygı olmayan yerde, sevgiler ver yansın,
+Ruhun boşluktaysa eğer, sacece Boş bakarsın.
+Bu sessiz bir öfke, kadim bir sözün izinde
+Bakıyoruz dünyaya, vicdanın o tozlu gözünde.
+
+Zamanın bittiği yerde, ömür artık ne yapsın?
+Bırak bu sahte dünya, kendi küllerinde yansın!
+Kaderini elinle yazmadıkça, 
+sen sadece bir imkansın!</div>
+            </div>
+        </div>
+
+        <footer>
+            © 2026 Keybo. Tüm Hakları Saklıdır.
+        </footer>
+    </div>
+
+</body>
+</html>
